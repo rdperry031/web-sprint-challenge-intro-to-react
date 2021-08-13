@@ -2,7 +2,16 @@ import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import Character from './components/Character'
-import img from './images/goSeeAStarWar.jpg'
+import styled from 'styled-components';
+import { GlobalStyles } from './theme/GlobalStyles';
+
+const StyledHeader = styled.h1`
+  font-family: 'Star Warsesque';
+  font-size: 7rem;
+  line-height: 1;
+  color: #FFE81F;
+  `
+
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
@@ -22,7 +31,8 @@ const App = () => {
   
   return (
     <div className="App">
-      <h1 className="Header">Characters</h1>
+    <GlobalStyles/>
+      <StyledHeader className="Header">Go See A<br></br> Star<br></br> War</StyledHeader>
     {characters.map(character => <Character key = {character.name} character = {character}/>)}
    </div>
   );
