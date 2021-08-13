@@ -56,7 +56,6 @@ body{
     line-height: 1.5;
     background-image: url(${img});
     background-repeat: no-repeat;
-    background-size: 200%;
 }
 
 ol, ul {
@@ -74,5 +73,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+img{
+    size: 100%;
+}
 `

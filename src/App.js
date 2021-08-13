@@ -7,7 +7,7 @@ import { GlobalStyles } from './theme/GlobalStyles';
 
 const StyledHeader = styled.h1`
   font-family: 'Star Warsesque';
-  font-size: 7rem;
+  font-size: 10rem;
   line-height: 1;
   color: #FFE81F;
   `
@@ -30,7 +30,6 @@ const App = () => {
   useEffect(() => {
     axios.get('https://swapi.dev/api/people/')
       .then(res => {
-        console.log(res.data)
         setCharacters(res.data)
       })
       .catch(err => {
