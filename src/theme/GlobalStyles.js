@@ -29,20 +29,18 @@ export const GlobalStyles = createGlobalStyle`
     footer, header, hgroup, menu, nav, section {
         display: block;
     }
-    
-@font-face {
-      font-family: 'Star Warsesque';
-      font-style: normal;
-      src: url(${starjout});
-    }
-@font-face {
-      font-family: 'News Cycle';
-      font-style: normal;
-      src: url(https://fonts.gstatic.com/s/newscycle/v17/CSR54z1Qlv-GDxkbKVQ_dFsvWNReuQ.woff2) format('woff2');
-    }
-    
-    
+    @font-face {
+          font-family: 'Star Warsesque';
+          font-style: normal;
+          src: url(${starjout});
+        };
+    @font-face {
+          font-family: 'News Cycle';
+          font-style: normal;
+          src: url('https://fonts.gstatic.com/s/newscycle/v17/CSR54z1Qlv-GDxkbKVQ_dFsvWNReuQ.woff2') format('woff2');
+        };
 *{
+    
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
@@ -53,7 +51,7 @@ html{
 }
 body{   
     font-family: 'News Cycle';
-    font-size: 12rem;
+    font-size: 1.6rem;
     color: #FFE81F;
     line-height: 1.5;
     background-image: url(${img});

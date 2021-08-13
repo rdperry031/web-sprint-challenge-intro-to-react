@@ -20,13 +20,22 @@ const App = () => {
   // side effect in a component, you want to think about which state and/or props it should
   // sync up with, if any.
   const [characters, setCharacters] = useState([])
-
+  useEffect(() => {
+    axios.get('https://swapi.dev/api/films')
+      .then(res => {
+        console.log(res)
+      })
+  },[])
 
   useEffect(() => {
     axios.get('https://swapi.dev/api/people/')
       .then(res => {
+        console.log(res.data)
         setCharacters(res.data)
-      },)
+      })
+      .catch(err => {
+        console.log(err)
+      })
   },[])
   
   return (
