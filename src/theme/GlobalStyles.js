@@ -53,12 +53,12 @@ html{
 }
 body{   
     font-family: 'News Cycle';
-    font-size: 1.6rem;
+    font-size: 12rem;
     color: #FFE81F;
     line-height: 1.5;
     background-image: url(${img});
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 200%;
 }
 
 ol, ul {
